@@ -38,9 +38,12 @@ Ink_RESOURCE_FILES = \
   Document.gorm \
   Ink_app.ico
 
-Ink_LANGUAGES = English
+Ink_LANGUAGES = English French
 
-Ink_LOCALIZED_RESOURCE_FILES = MainMenu.gorm
+Ink_LOCALIZED_RESOURCE_FILES = \
+MainMenu.gorm \
+MainMenu_Localizable.strings \
+InkInfo.plist
 
 Ink_OBJC_FILES = \
   main.m \

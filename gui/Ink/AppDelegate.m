@@ -34,6 +34,17 @@
 
 @implementation AppDelegate
 
+/* Allowing Localized Info Panel */
+- (void) showInfoPanel: (id) sender
+{
+  NSBundle *bundle = [NSBundle mainBundle];
+  NSString *path = [bundle pathForResource: @"InkInfo"
+                           ofType: @"plist"];
+  NSDictionary *localizedInfo = [NSDictionary 
+     dictionaryWithContentsOfFile: path];
+  [NSApp orderFrontStandardInfoPanelWithOptions: localizedInfo]; 
+}
+
 - (void) applicationDidFinishLaunching: (NSNotification *)not
 {
   NS_DURING

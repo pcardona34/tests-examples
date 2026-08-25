@@ -22,7 +22,8 @@
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
+
 
 @class NSString;
 @class NSPasteboard;
@@ -35,5 +36,7 @@
 - (void) openFile:(NSPasteboard *)pasteboard
 	 userData:(NSString *)userData
 	    error:(NSString **)error;
+
+- (void) showInfoPanel: (id) sender;
 
 @end

@@ -236,9 +236,9 @@
       asIconButton = [[NSButton alloc] initWithFrame:
 					 NSMakeRect (0.0, 0.0, 100.0, 24.0)];
       [asIconButton setButtonType: NSSwitchButton];
-      [asIconButton setTitle: @"Insert as icon"];
+      [asIconButton setTitle: _(@"Insert as icon")];
       /* tooltips are not implemented, but this is for the future ... */
-      [asIconButton setToolTip: @"Insert file type icon instead of file contents"];
+      [asIconButton setToolTip: _(@"Insert file type icon instead of file contents")];
 
       [accView addSubview: asIconButton];
     }
